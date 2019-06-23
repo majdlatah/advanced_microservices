@@ -15,5 +15,7 @@ Our defined REST API are shown below:
 </p>
 
 Computer API: curl -X POST "http://127.0.0.1:5000/compute" -H "Content-Type: application/json" -d "{ \"changeto\": \"dolar\", \"customerid\": 1, \"value\": 40}"
+
 Customer API: http://127.0.0.1:5000/customer/1
+
 Mail API: curl -X POST "127.0.0.1:5000/email" -H "Content-Type: application/json" -d "{ \"email\": \"youremail@outlook.com\", \"msg\": \"My message\", \"subject\": \"My topic\"}"
