@@ -72,19 +72,10 @@ def compute():
     changeto = request.json.get('changeto')
     value = request.json.get('value')
     customerid = request.json.get('customerid')
-    #email = request.json.get('email')
     msg = "Please wait the calculation, you'll receive an email with results"
-    #subject = "API Notification"
     with ClusterRpcProxy(CONFIG) as rpc:
-        # asynchronously spawning and email notification
-        #rpc.mail.send.call_async(email, subject, msg)
-        # asynchronously spawning the compute task
         result = rpc.compute.compute.call_async(changeto, value,customerid)
-        #print result.result()
-        #rpc.mail.send.call_async(email, subject, result)
         return msg, 200
-
-
 
 
 #@app.route('/customer', methods=['GET'])
@@ -107,23 +98,12 @@ def find(customerid):
         description: Customer Not Found
     """
     with ClusterRpcProxy(CONFIG) as rpc:
-        # asynchronously spawning and email notification
         result = rpc.customer.find(customerid)
         if (result == 1):
             return "We Found the Customer",200
         else:
             return "Customer Not Found",404
 
-        #asynchronously spawning the compute task
-           #result = rpc.compute.compute.call_async("sum", value, other, email)
-        #print result.result()
-        #rpc.mail.send.call_async(email, subject, result)
-
-
-
-app.run(
-        host="0.0.0.0",
-        port=5000
-        )
+app.run( host="0.0.0.0",port=5000)
 
 
