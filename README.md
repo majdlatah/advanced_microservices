@@ -10,6 +10,8 @@ As shown below the COMPUTING service first checks whether the customer exists or
   <img src="https://github.com/majdlatah/advanced_microservices/blob/master/ar.png">
 </p>
 
+Our defined REST API are shown below:
+
 <p align="center">
   <img src="https://github.com/majdlatah/advanced_microservices/blob/master/api.png">
 </p>
