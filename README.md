@@ -10,3 +10,6 @@ As shown below the COMPUTING service first checks whether the customer exists or
 
 ![Image2](https://github.com/majdlatah/advanced_microservices/blob/master/api.png)
 
+<p align="center">
+  <img src="https://github.com/majdlatah/advanced_microservices/blob/master/api.png">
+</p>
