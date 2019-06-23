@@ -18,4 +18,4 @@ Computer API: curl -X POST "http://127.0.0.1:5000/compute" -H "Content-Type: app
 
 Customer API: http://127.0.0.1:5000/customer/1
 
-Mail API: curl -X POST "127.0.0.1:5000/email" -H "Content-Type: application/json" -d "{ \"email\": \"youremail@outlook.com\", \"msg\": \"My message\", \"subject\": \"My topic\"}"
+Mail API: curl -X POST "127.0.0.1:5000/email" -H "Content-Type: application/json" -d "{ \"email\": \"youremail@company.com\", \"msg\": \"My message\", \"subject\": \"My topic\"}"
