@@ -8,3 +8,5 @@ As shown below the COMPUTING service first checks whether the customer exists or
 
 ![Image1](https://github.com/majdlatah/advanced_microservices/blob/master/ar.png)
 
+![Image2](https://github.com/majdlatah/advanced_microservices/blob/master/api.png)
+
