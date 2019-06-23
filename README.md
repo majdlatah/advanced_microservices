@@ -1,2 +1,2 @@
-# advanced_microservices
+# Advanced microservices
 A toy example of RPC microservices
